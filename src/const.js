@@ -1,0 +1,1 @@
+export const BASE_URL = 'https://webapi.omoloko.ru/api/v1/products';

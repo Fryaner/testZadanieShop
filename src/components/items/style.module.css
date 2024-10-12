@@ -1,0 +1,32 @@
+main {
+    padding: 100px 10px 100px 10px;
+}
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+.spinner {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    border: 2px solid rgba(0,0,0,0.5);
+    border-radius: 100%;
+    animation: spin 1s infinite linear;
+ }
+
+.spinner:before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 5px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}

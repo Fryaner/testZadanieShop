@@ -1,0 +1,111 @@
+.cardItem {
+    width: 300px;
+    background-color: white;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 7px 7px 9px -3px rgba(34, 60, 80, 0.18);
+    border: 1px solid rgba(34, 60, 80, 0.1);
+    transition: .5s;
+    
+}
+@media (hover:hover) {
+.cardItem:hover {
+    box-shadow: 7px 7px 9px -3px rgba(34, 60, 80, 0.38);
+}
+   
+}
+
+@media (hover: hover) {
+    .cardItem:hover .cardNew {
+        border: 2px solid #5E6AED;
+    }
+}
+.cardInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    gap: 10px;
+}
+.cardImg  {
+    width: 100%;
+    height: 300px;
+    border-bottom: 1px solid #2E2E2E;
+}
+.cardImg img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.cardTitle {
+    text-align: center;
+}
+.cardTitle a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.cardCostCurrent {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    justify-content: center;
+}
+.cardCostCurrent  {
+    font-size: 13px;
+}
+.cardNew {
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    background-color: #5E6AED;
+    padding: 10px 20px 10px 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 100%;
+    font-size: 12px;
+    border: 0px solid #5E6AED;
+    transition: .1s;
+    color: white;
+}
+.cardAdd {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.cardAddBtn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+@media (hover:hover) {
+    .cardAddBtn:hover svg {
+        rotate: 360deg;
+    }
+}
+.cardAdd svg {
+    transition: 1s;
+    cursor: pointer;
+    transform: rotate(0deg);
+}
+.cardAdd a {
+    cursor: pointer;
+    color: black;
+}
+.cardFooter {
+    display: flex;
+    gap: 20px;
+}
+.counts {
+    display: flex;
+    flex-direction: column;
+}
+.counts input{
+    width: 30px;
+    text-align: center;
+    padding: 5px;
+    background-color: #EAEAEB;
+}
